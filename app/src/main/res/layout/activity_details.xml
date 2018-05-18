@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_dim"
+    android:background="@android:color/white"
+    tools:context=".view.details.DetailsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/details_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_weather"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/weather"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_weather" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            app:layout_constraintRight_toLeftOf="@+id/txt_unit"
+            app:layout_constraintTop_toBottomOf="@+id/txt_weather" />
+
+        <TextView
+            android:id="@+id/txt_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_dim"
+            android:text="@string/f_unit"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_weather" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/default_dim"
+            android:paddingEnd="@dimen/default_dim"
+            android:paddingStart="@dimen/default_dim"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_name" />
+
+        <View
+            android:layout_marginHorizontal="@dimen/default_dim"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+        <TextView
+            android:id="@+id/txt_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/wind_speed"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+        <TextView
+            android:id="@+id/tv_wind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc" />
+
+        <View
+            android:layout_marginHorizontal="@dimen/default_dim"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@+id/txt_wind" />
+
+        <TextView
+            android:id="@+id/txt_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/cloudiness"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_wind" />
+
+        <TextView
+            android:id="@+id/tv_cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_wind" />
+
+        <View
+            android:layout_marginHorizontal="@dimen/default_dim"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cloud" />
+
+        <TextView
+            android:id="@+id/txt_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/pressure"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cloud" />
+
+        <TextView
+            android:id="@+id/tv_pressure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_cloud" />
+
+        <View
+            android:layout_marginHorizontal="@dimen/default_dim"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pressure" />
+
+        <TextView
+            android:id="@+id/txt_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/humidity"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pressure" />
+
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_pressure" />
+
+        <View
+            android:layout_marginHorizontal="@dimen/default_dim"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#EEE"
+            app:layout_constraintTop_toBottomOf="@+id/txt_humidity" />
+
+        <TextView
+            android:id="@+id/txt_sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:text="@string/sunrise"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_humidity" />
+
+        <TextView
+            android:id="@+id/tv_sunrise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_humidity" />
+
+        <TextView
+            android:id="@+id/txt_measured"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/default_dim"
+            android:paddingStart="@dimen/default_dim"
+            android:text="@string/measured"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sunrise" />
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/default_dim"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/txt_measured"
+            app:layout_constraintTop_toBottomOf="@+id/txt_sunrise" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

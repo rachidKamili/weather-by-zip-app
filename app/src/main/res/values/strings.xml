@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Weather App</string>
+    <string name="hint_zip">Zip code</string>
+    <string name="hamburger">Hamburger</string>
+    <string name="cheeseburger">Cheeseburger</string>
+    <string name="big_mac">Big Mac</string>
+    <string name="weather">WEATHER</string>
+    <string name="f_unit">°F</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="cloudiness">Cloudiness</string>
+    <string name="pressure">Pressure</string>
+    <string name="humidity">Humidity</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="measured">Measured: </string>
+</resources>
