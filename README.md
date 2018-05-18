@@ -3,7 +3,7 @@
 Search by Zip Code for local weather conditions. Using [Open Weather Map API](https://openweathermap.org/api).
 
 ## Preview
-<!--<img src="https://raw.githubusercontent.com/rachidKamili/weather-by-zip-app/master/screenshots/lifecycle.gif">-->
+<img src="https://raw.githubusercontent.com/rachidKamili/weather-by-zip-app/master/screenshots/lifecycle.gif">
 
 ### Architecture
 * MVP
